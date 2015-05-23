@@ -18,7 +18,7 @@ A angularjs directive which allows only numbers to be typed into a text box .
 ## DEMO
 --------
 
-[Accept Number Only](http://demos.nitishkumarsingh.com/angular-directive-accept-number-only/).
+[Accept Number Only](http://www.nitishkumarsingh.com/demos/angular-directive-accept-number-only/).
 
 
 ## HOW TO USE
