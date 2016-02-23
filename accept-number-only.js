@@ -41,7 +41,7 @@ angular.module('mainApp', [])
               
                 /*Check it is number or not.*/
                 if (isNaN(newValue)) {
-                  ngModel.$setViewValue(oldValue);
+                  ngModel.$setViewValue(oldValue || '');
                   ngModel.$render();
                 }
             });
