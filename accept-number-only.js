@@ -34,7 +34,26 @@ angular.module('mainApp', [])
                 }
               }
               
-              
+              if (attrs.min && !isNaN(attrs.min) && newValue) {
+                if (newValue < attrs.min) {
+                  ngModel.$setValidity("min", false);
+                } else {
+                  ngModel.$setValidity("min", true);
+                }
+              } else {
+                ngModel.$setValidity("min", true);
+              }
+
+              if (attrs.max && !isNaN(attrs.max) && newValue) {
+                if (newValue > attrs.max) {
+                  ngModel.$setValidity("max", false);
+                } else {
+                  ngModel.$setValidity("max", true);
+                }
+              } else {
+                ngModel.$setValidity("max", true);
+              }
+             
               if (spiltArray.length === 0) return;
               if (spiltArray.length === 1 && (spiltArray[0] == '-' || spiltArray[0] === '.' )) return;
               if (spiltArray.length === 2 && newValue === '-.') return;
