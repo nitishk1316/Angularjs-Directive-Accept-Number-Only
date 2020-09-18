@@ -15,12 +15,6 @@ A angularjs directive which allows only numbers to be typed into a text box .
 * Decimal place upto
 
 
-## DEMO
---------
-
-[Accept Number Only](http://www.nitishkumarsingh.com/demos/angular-directive-accept-number-only/).
-
-
 ## HOW TO USE
 ---------------
  
